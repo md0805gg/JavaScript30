@@ -43,7 +43,10 @@
     });
 
     const pypl = people.reduce((sum, currentItem) => {
-      
+      if(!sum[currentItem]) {
+        sum[currentItem] = 'dfasf'
+      };
+      //sum[currentItem] ++
       return sum;
     }, {});
 
